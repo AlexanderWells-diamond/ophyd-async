@@ -40,12 +40,12 @@ jobs:
 
       - name: Run tests win
         if: inputs.runs-on == 'windows-latest'
-        run: uv run tox -e tests -- --timeout=6
+        run: uv run --prerelease=allow tox -e tests -- --timeout=6
 
       - name: Non win tests
         if: inputs.runs-on != 'windows-latest'
-        run: uv run tox -e tests -- --timeout=2
-      
+        run: uv run --prerelease=allow tox -e tests -- --timeout=2
+
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
