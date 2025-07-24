@@ -29,7 +29,7 @@ requires-python = ">=3.10"
 [project.optional-dependencies]
 sim = ["h5py"]
 ca = ["aioca>=1.6"]
-pva = ["p4p>=4.2.1a2", "epicscorelibs>=7.0.7.99.1.2a3", "pvxslibs>=1.4.0a3"]
+pva = ["p4p>=4.2.1a3", "epicscorelibs>=7.0.7.99.1.2a3", "pvxslibs>=1.4.0a3"]
 tango = ["pytango==10.0.0"]
 demo = ["ipython", "matplotlib", "pyqt6"]
 
